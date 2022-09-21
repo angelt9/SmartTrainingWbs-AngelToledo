@@ -1,0 +1,729 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* general */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #E7F6F2;
+}
+
+a {
+    text-decoration: none;
+    color: #E7F6F2;
+}
+
+.celeste{
+    color: #E7F6F2;
+}
+
+.bcg{
+    background-color: #31535c;
+}
+
+.bcg2{
+    background-color: #2C3333;
+}
+
+/* GRID INDEX */
+.contenedor {
+    background-color: #313333;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: min-content auto auto min-content min-content;
+    overflow: auto;
+    gap: .6rem .6rem;
+    justify-content: center;
+    align-content: center;
+    justify-items: stretch;
+    align-items: stretch;
+    grid-template-areas:
+        "header header header"
+        "main main main"
+        "section section section2"
+        "provs provs provs"
+        "footer footer footer";
+}
+
+/* HEADER */
+.header {
+    grid-area: header;
+    background-color: #1e2222;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.header div {
+    display: flex;
+    align-items: center;
+}
+
+.header div a i {
+    color: #E7F6F2;
+    font-size: 4rem;
+    padding: 1rem;
+    transition: .3s;
+}
+
+.header div a i:hover {
+    color: #A5C9CA;
+    transform: scale(1.4);
+}
+
+.header div h1 {
+    font-size: 3rem;
+    padding: 1rem;
+    transition: .3s;
+}
+
+.header div h1:hover {
+    transform: scale(1.06);
+}
+
+.header div h1 a:hover {
+    color: #A5C9CA;
+}
+
+.header nav{
+    display: flex;
+    align-items: center;
+}
+
+.header nav ul {
+    display: flex;
+    text-decoration: none;
+    padding: .4rem;
+    flex-wrap: wrap;
+}
+
+.header nav ul li {
+    list-style: none;
+    padding: .2rem;
+    transition: .4s;
+}
+
+.header nav ul li a {
+    padding: 1rem;
+    font-size: 1.2rem;
+    transition: .4s;
+}
+
+.header nav ul li:hover {
+    transform: scale(1.2);
+}
+
+.header nav ul li a:hover {
+    color: #A5C9CA;
+}
+
+/* MAIN */
+.main {
+    grid-area: main;
+}
+
+/* SECTION */
+.section {
+    grid-area: section;
+    background-color: #343b3b;
+    padding: 1rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.section h4 {
+    padding: 1rem;
+    font-size: 1.8rem;
+}
+
+.section p {
+    padding: 1rem;
+}
+
+.section h4 a {
+    padding: 1rem;
+}
+
+.section a button {
+    background-color: #1d2020;
+    border: none;
+    color: #E7F6F2;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.section a button:hover {
+    color: #397686;
+}
+
+.section2{
+    background-color: #2C3333;
+}
+
+.section2 img {
+    width: 30rem;
+}
+
+/* PROOVEDORES */
+.provs {
+    grid-area: provs;
+    background-color: #313333;
+    padding: 2rem;
+}
+
+.provs div {
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+}
+
+.provs h2 {
+    text-align: center;
+}
+
+.provs img {
+    width: 8rem;
+}
+
+/* FOOTER */
+.footer {
+    grid-area: footer;
+    background-color: #1e2222;
+    padding: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer h4 a {
+    transition: .3s;
+}
+
+.footer h4 a:hover {
+    color: #A5C9CA;
+}
+
+.footer h5 {
+    font-size: 1rem;
+    padding: .8rem;
+}
+
+.footer ul {
+    display: flex;
+    padding: .8rem;
+}
+
+.footer ul li {
+    list-style: none;
+    padding: .8rem;
+}
+
+.footer ul li a {
+    padding: .8rem;
+}
+
+.footer ul li a i {
+    font-size: 1.8rem;
+    transition: .4s;
+}
+
+.footer ul li a i:hover {
+    color: #A5C9CA;
+    transform: scale(1.4);
+}
+
+.footer h5 a {
+    transition: .3s;
+}
+
+.footer h5 a:hover {
+    color: #A5C9CA;
+}
+
+/* GRID GUIA */
+
+.guia {
+    background-color: #2C3333;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: min-content auto auto min-content;
+    overflow: auto;
+    gap: .6rem .6rem;
+    grid-template-areas:
+        "header header"
+        "foto libro"
+        "comments comments"
+        "footer footer";
+}
+
+.libro {
+    grid-area: libro;
+    padding: 1rem;
+    background-color: #397686;
+    background-color: #414e52;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.libro p {
+    text-align: center;
+}
+
+.libro button {
+    background-color: #2C3333;
+    border: none;
+    color: #E7F6F2;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.libro a button:hover {
+    color: #397686;
+}
+
+.foto {
+    grid-area: foto;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.foto img {
+    width: 28rem;
+}
+
+.comments {
+    grid-area: comments;
+    padding: 1rem;
+    background-color: #313333;
+    display: flex;
+    flex-direction: column;
+}
+
+.comments h3 {
+    padding: 1rem;
+}
+
+.comments textarea {
+    background-color: #31535c;
+    border: none;
+    padding: 1rem;
+}
+
+.comments input {
+    border: none;
+    padding: 1rem;
+    color: #313333;
+    font-weight: 700;
+    font-size: 1rem;
+    background-color: #6a9696;
+    cursor: pointer;
+}
+
+/* GRID PRODUCTOS */
+
+.products {
+    background-color: #1e2222;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: min-content 1fr 1fr 1fr min-content;
+    overflow: auto;
+    gap: .6rem .6rem;
+    grid-template-areas:
+        "header header header "
+        "cats merch merch"
+        "cats merch merch"
+        "cats merch merch"
+        "footer footer footer";
+}
+
+.merch {
+    grid-area: merch;
+    padding: 1rem;
+    background-color: #414e52;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.merch a img {
+    width: 22rem;
+}
+
+.cats {
+    grid-area: cats;
+    padding: 1rem;
+    background-color: #313333;
+    font-size: 1.2rem;
+}
+
+.cats ul {
+    list-style: none;
+    padding: 1rem;
+}
+
+/* GRID SERVICIOS */
+
+.services {
+    background-color: #1e2222;
+    display: grid;
+    grid-template-columns: auto 1fr 1fr auto;
+    grid-template-rows: min-content 1fr 1fr min-content;
+    overflow: auto;
+    gap: .6rem .6rem;
+    grid-template-areas:
+        "header header header header"
+        "method method  method  method"
+        "plans plans plans plans"
+        "footer footer footer footer";
+}
+
+.method {
+    grid-area: method;
+    padding: 1rem;
+    background-color: #2C3333;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.method h2 {
+    padding: 1rem;
+}
+
+.method p {
+    margin: 1rem;
+}
+
+.plans {
+    grid-area: plans;
+    padding: 1rem;
+    background-color: #3f4b4b;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.plans h3 {
+    transition: .3s;
+}
+
+.plans h3:hover {
+    color: #5f8591;
+    transform: scale(1.2);
+}
+
+.plans div a {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+}
+
+.plans .call img {
+    width: 20rem;
+}
+
+.plans .rutina img {
+    width: 36rem;
+}
+
+.plans .comida img {
+    width: 28rem;
+}
+
+/* GRID NOSOTROS */
+
+.us {
+    background-color: #1e2222;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    grid-template-rows: min-content auto auto min-content;
+    overflow: auto;
+    gap: .6rem .6rem;
+    grid-template-areas:
+        "header header"
+        "whatis maps"
+        "pregs form"
+        "footer footer";
+}
+
+.whatis {
+    grid-area: whatis;
+    background-color: #444c4c;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.whatis h1 {
+    padding: 1rem;
+}
+
+.whatis h2 {
+    padding: 1rem;
+}
+
+.whatis p {
+    padding: 1rem;
+}
+
+.maps {
+    grid-area: maps;
+    background-color: #313d3d;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.maps h2 {
+    padding: 1rem;
+}
+
+.pregs {
+    grid-area: pregs;
+    padding: 2rem;
+    background-color: #412842;
+}
+
+.form {
+    grid-area: form;
+    padding: 1rem;
+    background-color: #372938;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form form fieldset {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    border: #412842 solid;
+    background-color: #5c395e;
+    border-radius: 1rem;
+}
+
+.form fieldset legend {
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+.form form fieldset div input {
+
+    background-color: #2C3333;
+    border: none;
+    color: #E7F6F2;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.form fieldset div a input {
+    cursor: pointer;
+    transition: .3s;
+}
+
+.form fieldset div a input:hover {
+    color: #855488;
+}
+
+#texto {
+    background-color: #855488;
+    border: none;
+}
+
+/* MEDIA QUERIES max-width:768px */
+
+/* INDEX */
+@media screen and (max-width:768px) {
+    .contenedor  {
+        grid-template-columns: auto auto;
+        overflow: hidden;
+        grid-template-rows: min-content auto min-content auto auto min-content;
+        grid-template-areas:
+            "header header"
+            "main main"
+            "section section"
+            "section2 section2"
+            "provs provs"
+            "footer footer";
+    }
+
+    .section2{
+        grid-area: section2;
+        display: flex;
+        justify-content: center;
+    }
+
+    .section2 img{
+        width: 20rem;
+    }
+
+    .header {
+        flex-direction: column;
+    }
+
+    .header div a i {
+        font-size: 5rem;
+    }
+
+    .header h1 a {
+        font-size: 2.4rem;
+    }
+
+    .main {
+        background-size: 100% 100%;
+    }
+
+    .main h3 a {
+        position: relative;
+        top: 16rem;
+        left: 14rem;
+    }
+
+    .aside {
+        flex-direction: column;
+    }
+
+    .aside div {
+        flex-direction: row;
+    }
+
+    .section img {
+        width: 20rem;
+    }
+
+    .img1 {
+        width: 8rem;
+    }
+
+    .img2 {
+        width: 15rem;
+    }
+
+    .img3 {
+        width: 7rem;
+    }
+
+    .img4 {
+        width: 12rem;
+    }
+
+    /* GUIA PARA NUEVOS */
+
+    .guia {
+        background-color: #1e2222;
+        display: grid;
+        gap: .6rem .6rem;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: min-content .5fr 1fr auto min-content;
+        grid-template-areas:
+            "header header"
+            "foto foto"
+            "libro libro"
+            "comments comments"
+            "footer footer";
+    }
+
+    .guia img {
+        width: 16rem;
+    }
+
+    .comments img{
+        width: 3rem;
+    }
+
+    /* PRODUCTOS */
+
+    .products {
+        background-color: #223131;
+        display: grid;
+        grid-template-columns: auto 1fr 1fr;
+        grid-template-rows: min-content auto auto auto min-content;
+        gap: .6rem .6rem;
+        justify-content: center;
+        align-content: center;
+        justify-items: stretch;
+        align-items: stretch;
+        grid-template-areas:
+            "header header header"
+            "cats merch merch"
+            "cats merch merch"
+            "cats merch merch"
+            "footer footer footer";
+    }
+
+    .products .merch img {
+        width: 10rem;
+    }
+
+    .cats {
+        font-size: 1.1rem;
+    }
+
+    /* SERVICIOS */
+
+    .services {
+        background-color: #1e2222;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 1fr auto min-content;
+        gap: .6rem .6rem;
+        grid-template-areas:
+            "header header"
+            "method method "
+            "plans plans"
+            "footer footer";
+    }
+
+    .services .plans .call img {
+        width: 10rem;
+    }
+
+    .plans .rutina img {
+        width: 17rem;
+    }
+
+    .plans .comida img {
+        width: 13rem;
+    }
+
+    /* NOSOTROS */
+    .us {
+        background-color: #1e2222;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: min-content 1fr auto auto auto min-content;
+        gap: .6rem .6rem;
+        grid-template-areas:
+            "header header"
+            "whatis whatis"
+            "pregs pregs"
+            "maps maps"
+            "form form"
+            "footer footer";
+    }
+}
